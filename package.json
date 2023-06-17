@@ -1,0 +1,43 @@
+{
+  "name": "@rbxts/gameutil",
+  "version": "1.1.0",
+  "main": "out/init.lua",
+  "author": {
+    "name": "typechecked",
+    "email": "me@typechecked.dev",
+    "url": "https://typechecked.dev"
+  },
+  "repository": "github:cmumme/rbxts-gameutil",
+  "license": "MIT",
+  "scripts": {
+    "build": "rbxtsc",
+    "lint": "eslint ./src",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "yarn run build"
+  },
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^1.3.3-types.1",
+    "@rbxts/types": "^1.0.646",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-plugin-roblox-ts": "^0.0.34",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@rbxts/cubic-bezier": "^1.1.0",
+    "@rbxts/easing-functions": "^1.1.0",
+    "@rbxts/object-utils": "^1.0.4",
+    "@rbxts/services": "^1.5.1",
+    "@rbxts/signal": "^1.1.1",
+    "@rbxts/tween": "^1.0.5"
+  }
+}
